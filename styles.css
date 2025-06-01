@@ -1,0 +1,212 @@
+body {
+    background-color: ghostwhite;
+}
+
+h1 {
+    text-align: center;
+}
+
+#under-display {
+    color:grey; display:inline;
+    margin: 0 0;
+    align-self: center;
+    text-align: center;
+    transform: translate(15em, -2rem);
+}
+
+@media all and (max-width: 800px) {
+    #under-display {
+    transform: translate(-7em, 0);
+    }
+    footer {
+        margin-bottom: 3rem;
+    }
+}
+
+p {
+    text-align: start;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#art {
+    margin: 2rem;
+    height: 50vh;
+    justify-content: start;
+}
+
+#art-img {
+    height: 100%;
+}
+
+#citate {
+    text-align: start;
+    margin: 4rem;
+    margin-top: 2rem;
+}
+#citate p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.nav {
+    position:sticky;
+    top: 0;
+    padding: 0.4rem;
+    justify-content: end;
+    background-color: #b5dcff;
+}
+
+@media all and (max-width: 800px) {
+    .nav {
+        /* How to make it teleport to the bottom? */
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    #art-img {
+        height: auto;
+    }
+}
+
+img {
+    display: inline-block;
+    padding: 1rem;
+    max-width: 100%;
+    max-height: 60vh;
+    align-self: center;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+aside {
+    font-weight: bold;
+}
+
+.my-container {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #bedfff;
+    color: black;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.my-container aside {
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+}
+
+@media all and (max-width: 800px) {
+    .my-container {
+        flex-flow: column nowrap;
+        align-content: center;
+        text-align: center;
+
+    }
+    .my-container button {
+        margin: auto;
+    }
+    .my-container aside {
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
+
+.my-v-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.img-container {
+    display: contents;
+    max-width: 400px;
+}
+
+.tight {
+    flex-shrink: 10;
+}
+
+.main {
+    margin: 1rem;
+}
+
+.centered {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    -ms-transform: translate(-50%);
+}
+
+.btn-div {
+    position: static;
+    width: 100%;
+    margin: 1rem 0rem;
+    bottom: 3vh;
+}
+
+@media all and (max-width: 800px) {
+    .btn-div {
+        bottom: 10vh;
+    }
+}
+
+.side-margin {
+    margin: 0 10%;
+}
+
+
+
+/*section tests
+.container {
+    display:flex;
+    flex-flow: row wrap;
+    border-style: none;
+    justify-content: flex-start;
+    align-items: start;
+    align-content: start;
+    height: 200px;
+}
+
+@media all and (max-width: 800px) {
+    .container {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content; center;
+    }
+}
+
+h3 {
+    background-color: ghostwhite;
+    order: 1;
+    flex: 2 0 100px;
+}
+div {
+    background-color: lightgrey;
+    border-color: black;
+    border-style: solid;
+    flex-basis: auto;
+    font-size: 28px;
+    margin: 2px;
+    order: 2;
+
+}
+div.special {
+    background-color: pink;
+}
+
+endsection tests*/
